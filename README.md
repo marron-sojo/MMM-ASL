@@ -2,7 +2,7 @@
 
 A module to easily learn American Sign Language (ASL) by imitating short video tutorials in the mirror. Users can see how they are 'actually' doing through their reflection and the correct gestures from the video at the same time. This overcomes the current limitation of learning which is simply watching video tutorials through their phone or laptop and not being able to compare the gestures directly.
 
-![](https://i.im.ge/2022/08/20/OIP2lx.mmm-asl-example.gif)
+![example](https://i.im.ge/2022/08/20/OIP2lx.mmm-asl-example.gif)
 
 ## Dependencies
   * An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
