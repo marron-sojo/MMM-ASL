@@ -8,22 +8,32 @@ A module to easily learn American Sign Language (ASL) by imitating short video t
 ## Installation
  1. Clone this repo into `~/MagicMirror/modules` directory.
  2. Configure your `~/MagicMirror/config/config.js`:
- 
-     ```
+
+## Examples
+#### Full screen
      {
-         module: 'MMM-connection-status',
-         header: "Internet Connection",
-         position: 'top_left', // Or any valid MagicMirror position.
+         module: 'MMM-ASL',
+         position: 'mididle_center',
          config: {
              // See 'Configuration options' for more information.
+             type: "default",
+             maxWidth: "100%",
          }
      }
-     ```
+#### Mini
+     {
+         module: 'MMM-ASL',
+         position: 'top_right', // Or any valid MagicMirror position.
+         config: {
+             // See 'Configuration options' for more information.
+             type: "mini",
+             maxWidth: "20%",
+         }
+     }
 
 ## Configuration Options
 
-| **Option**         | **Default** | **Description**                     |
-| ------------------ | ----------- | ----------------------------------- |
-| `updateInterval`   | `60000`     | Time in ms to wait between updating |
-| `initialLoadDelay` | `0`         | Time in ms to wait until start      |
-| `animationSpeed`   | `250`       | Fade animation time                 |
+| **Option**         | **Default**    | **Description**                                      |
+| ------------------ | -------------- | ---------------------------------------------------- |
+| `type`             | `default `     | Full screen version: `default`, Mini version: `mini` |
+| `maxWidth`         | `100%`         | Width of the sign language gifs                      |
